@@ -1,0 +1,11 @@
+import {Navigate} from "react-router-dom"
+import { getRole } from "../../../../restraurant/src/utils/auth";
+
+export default function
+ProctectedRoute({children,role}) {
+    const userRole = getRole();
+    if (!userRole || userRole !== role){
+        return <Navigate to = "/" />;
+    }
+    return children;
+}
