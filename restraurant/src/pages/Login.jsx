@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { loginUser } from "../../../../restraurant/src/utils/auth";
+import { loginUser } from "../utils/auth";
 
 export default function Login() {
     const [email, setEmail] = useState("");

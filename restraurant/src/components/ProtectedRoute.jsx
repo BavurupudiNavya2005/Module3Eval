@@ -1,5 +1,5 @@
 import {Navigate} from "react-router-dom"
-import { getRole } from "../../../../restraurant/src/utils/auth";
+import { getRole } from "..utils/auth";
 
 export default function
 ProctectedRoute({children,role}) {
