@@ -43,7 +43,7 @@ AddRestaurant(){
             </select>
             <label>
                 parking
-                <input type="checkbox" onChange={e => setForm({..form,
+                <input type="checkbox" onChange={e => setForm({...form,
                     parkingLot:e.target.checked
                 })} />
             </label>
